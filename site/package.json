@@ -2,9 +2,9 @@
   "name": "les-internes-site",
   "version": "0.0.0",
   "description": "un site qui permet de telecharger tout nos programme dans un .exe fais avec pkg",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "pack": "pkg package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +15,10 @@
     "node": "^20.2.0",
     "pkg": "^5.8.1"
   },
-  "bin": "index.js",
+  "bin": "app.js",
   "pkg": {
-    "scripts": "build/**/*.js",
-    "assets": "views/**/*",
+    "scripts": "public/**/*.js",
+    "assets": "public/**/*",
     "targets": [
       "node18"
     ],
