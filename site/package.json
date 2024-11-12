@@ -1,0 +1,27 @@
+{
+  "name": "les-internes-site",
+  "version": "0.0.0",
+  "description": "un site qui permet de telecharger tout nos programme dans un .exe fais avec pkg",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pack": "pkg package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "les internes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "node": "^20.2.0",
+    "pkg": "^5.8.1"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "assets": "views/**/*",
+    "targets": [
+      "node18"
+    ],
+    "outputPath": "dist"
+  }
+}
