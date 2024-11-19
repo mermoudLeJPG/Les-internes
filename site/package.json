@@ -2,18 +2,20 @@
   "name": "les-internes-site",
   "version": "0.0.0",
   "description": "un site qui permet de telecharger tout nos programme dans un .exe fais avec pkg",
+  "https": false,
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "pack": "pkg package.json",
+    "cert": "node ./scripts/sslFunction.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "les internes",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1",
-    "node": "^20.2.0",
-    "pkg": "^5.8.1"
+    "pkg": "^5.8.1",
+    "selfsigned": "^2.4.1"
   },
   "bin": "app.js",
   "pkg": {
