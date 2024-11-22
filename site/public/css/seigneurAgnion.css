@@ -30,5 +30,13 @@ header {
     color: aliceblue;
 }
 
+.segmentsAccueil {
+    height: 50%;
+}
+
+.segmentsSegmentsAccueil {
+    width: 25%;
+    height: 100%;
+}
 
 /*.button-container>a {}*/
