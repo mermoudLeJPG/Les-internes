@@ -35,7 +35,7 @@ if (pack.https) {
     //Create HTTPS server
     server = https.createServer(sslOptions, app);
 
-    server.listen(port, () => {
+    server.listen(port, host, () => {
         console.log(`HTTPS Server running on https://${host}:${port}`);
     });
 } else {
