@@ -9,7 +9,7 @@ const pack = require("./package.json");
 
 const app = express();
 const port = 3000;
-const host = "10.40.15.230";
+const host = "127.0.0.1";
 
 // Configurer readline pour lire les entrées de la console
 const rl = readline.createInterface({
